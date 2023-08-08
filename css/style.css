@@ -7,6 +7,9 @@
   --color6: #f07f7e;
   --color7: #868686;
   --color8: #ec4327;
+  --color9: #f8f8f8;
+  --color10: #515151;
+  --color11: #595959;
 }
 
 * {
@@ -14,6 +17,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Lato, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
 }
 
 .socialnavbar {
@@ -90,4 +98,83 @@
   padding: 12px;
   color: var(--color8);
   font-weight: bolder;
+}
+
+/* hero section  */
+
+.heroSection {
+  width: 100%;
+  height: 887px;
+  background-color: red;
+  background-image: url('../image/bg0.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroSection .hero {
+  display: flex;
+  flex-direction: column;
+  width: 793px;
+  height: 650px;
+  position: relative;
+  top: 116px;
+  left: 206px;
+  gap: 63.73px;
+  padding: 0 25px 0 25px;
+  background-color: transparent;
+}
+
+.heroSection .hero .herobox1 {
+  width: 100%;
+  height: 242.16px;
+  padding: 0 0 0 11px;
+  gap: 21.24px;
+}
+
+.heroSection .hero .herobox1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.heroSection .hero .herobox2 {
+  width: 100%;
+  height: 180.56px;
+  background-color: var(--color9);
+  border: 8px solid var(--color1);
+}
+
+.heroSection .hero .herobox2 p {
+  font-weight: 400;
+  font-size: 25.49px;
+  line-height: 36px;
+  letter-spacing: -1%;
+  padding: 4%;
+  color: var(--color10);
+}
+
+.heroSection .hero .herobox3 {
+  width: 100%;
+  height: 105px;
+  background-color: transparent;
+}
+
+.heroSection .hero .herobox3 h1 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: bolder;
+  font-size: 42.48px;
+  color: var(--color11);
+}
+
+.heroSection .hero .herobox3 p {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 700;
+  font-size: 27.61px;
+  color: var(--color7);
+  letter-spacing: -2%;
+}
+
+.program {
+  width: 100%;
+  height: 587px;
+  background-color: pink;
 }
