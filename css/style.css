@@ -10,6 +10,10 @@
   --color9: #f8f8f8;
   --color10: #515151;
   --color11: #595959;
+  --color12: #282b32;
+  --color13: #a04038;
+  --color14: #383e35;
+  --color15: #ff5438;
 }
 
 * {
@@ -176,5 +180,84 @@ header {
 .program {
   width: 100%;
   height: 587px;
-  background-color: pink;
+  background-color: var(--color12);
+  background-image: url('../image/bg2.png');
+}
+
+.program .program_content {
+  display: flex;
+  flex-direction: column;
+  width: 1012px;
+  height: 437px;
+  position: relative;
+  top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 70px;
+  text-align: center;
+  color: var(--color1);
+}
+
+.program .program_content p.title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.program .program_content p.title span {
+  display: block;
+  width: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color13);
+}
+
+.program .program_content .program_detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 231px;
+  background-color: transparent;
+}
+
+.program .program_content .program_detail .program_card {
+  width: 200px;
+  height: 231px;
+  padding: 6px 18px 22px 18px;
+  background-color: rgba(59, 62, 69, 0.7);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.program .program_content .program_detail .program_card img.program_card_icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 64px;
+  height: 58px;
+}
+
+.program .program_content .program_detail .program_card span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color15);
+  text-transform: capitalize;
+}
+
+.program .program_content .program_detail .program_card p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 6%;
+  color: var(--color1);
+}
+
+.program .program_content .end_title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
