@@ -261,3 +261,52 @@ header {
   line-height: 28px;
   text-transform: uppercase;
 }
+
+.speaker_section {
+  width: 100%;
+  height: 900px;
+  background-color: var(--color9);
+}
+
+.speaker_section .speaker_content {
+  width: 1031px;
+  height: 774px;
+  margin: auto;
+  background-color: rgb(177, 159, 159);
+}
+
+.speaker_section .speaker_content p.title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  text-transform: capitalize;
+  color: #000;
+  text-align: center;
+}
+
+.speaker_section .speaker_content p.title span {
+  display: block;
+  width: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color13);
+}
+
+.speaker_section .speaker_content .speakers {
+  width: 100%;
+  height: 677px;
+  gap: 25px;
+  background-color: orange;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 {
+  width: 100%;
+  height: 194px;
+  background-color: pink;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker {
+  width: 50%;
+  height: 100%;
+  background-color: gray;
+}
