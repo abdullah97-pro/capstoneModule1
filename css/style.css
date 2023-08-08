@@ -14,6 +14,8 @@
   --color13: #a04038;
   --color14: #383e35;
   --color15: #ff5438;
+  --color16: #f78c89;
+  --color17: #d9d9d9;
 }
 
 * {
@@ -177,6 +179,7 @@ header {
   letter-spacing: -2%;
 }
 
+/* program  */
 .program {
   width: 100%;
   height: 587px;
@@ -239,6 +242,14 @@ header {
   height: 58px;
 }
 
+.speaker_section .speaker_content p.title span {
+  display: block;
+  width: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color13);
+}
+
 .program .program_content .program_detail .program_card span {
   font-weight: 700;
   font-size: 24px;
@@ -262,9 +273,10 @@ header {
   text-transform: uppercase;
 }
 
+/* speaker_section  */
 .speaker_section {
   width: 100%;
-  height: 900px;
+  height: 850px;
   background-color: var(--color9);
 }
 
@@ -272,7 +284,6 @@ header {
   width: 1031px;
   height: 774px;
   margin: auto;
-  background-color: rgb(177, 159, 159);
 }
 
 .speaker_section .speaker_content p.title {
@@ -282,31 +293,84 @@ header {
   text-transform: capitalize;
   color: #000;
   text-align: center;
-}
-
-.speaker_section .speaker_content p.title span {
-  display: block;
-  width: 51px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 2px solid var(--color13);
+  padding-bottom: 45px;
 }
 
 .speaker_section .speaker_content .speakers {
   width: 100%;
   height: 677px;
-  gap: 25px;
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .speaker_section .speaker_content .speakers .speaker_grp1 {
   width: 100%;
   height: 194px;
-  background-color: pink;
+  display: flex;
+  justify-content: space-between;
 }
 
 .speaker_section .speaker_content .speakers .speaker_grp1 .speaker {
-  width: 50%;
-  height: 100%;
-  background-color: gray;
+  width: 49%;
+  height: 178px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker img {
+  width: 178px;
+  height: 177px;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro {
+  width: 305px;
+  height: 178px;
+  padding: 15px 0 0 0;
+  gap: 18px;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro .user_title {
+  width: 300px;
+  height: 89px;
+  gap: 9px;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro .user_title h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #000;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro p {
+  width: 305px;
+  height: 56px;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro .user_title p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.09em;
+  text-align: left;
+  color: var(--color16);
+  margin-bottom: -26px;
+}
+
+.speaker_section .speaker_content .speakers .speaker_grp1 .speaker .speaker_intro .user_title span {
+  display: inline-block;
+  width: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color17);
+}
+
+/* partners */
+.partners {
+  width: 100%;
+  height: 242px;
+  background-color: var(--color4);
 }
