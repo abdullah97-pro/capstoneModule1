@@ -1,3 +1,47 @@
-body {
-  background-color: white;
+:root {
+  --color1: #fff;
+  --color2: #3e3e3e;
+  --color3: #3b3e45;
+  --color4: #414246;
+  --color5: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.socialnavbar {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  overflow: hidden;
+  background-color: var(--color2);
+}
+
+.socialnavbar .socialnav {
+  list-style-type: none;
+  text-align: right;
+}
+
+.socialnavbar .socialnav li {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+.socialnavbar .socialnav li a {
+  color: var(--color1);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 0 4px;
+  font-size: 0.7em;
+  line-height: 10px;
+}
+
+.socialnavbar .socialnav li a i {
+  font-weight: lighter;
+  font-size: 1.4em;
 }
