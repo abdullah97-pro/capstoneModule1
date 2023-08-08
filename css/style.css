@@ -4,6 +4,9 @@
   --color3: #3b3e45;
   --color4: #414246;
   --color5: #f2f2f2;
+  --color6: #f07f7e;
+  --color7: #868686;
+  --color8: #ec4327;
 }
 
 * {
@@ -44,4 +47,47 @@
 .socialnavbar .socialnav li a i {
   font-weight: lighter;
   font-size: 1.4em;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0 10%;
+  display: flex;
+  background-color: var(--color1);
+}
+
+.navbar .logo {
+  width: 20%;
+  padding: 5px 5px;
+}
+
+.navbar .nav {
+  width: 80%;
+  list-style-type: none;
+  text-align: right;
+}
+
+.navbar .nav li {
+  display: inline-block;
+  padding: 25px 20px;
+}
+
+.navbar .nav li .active {
+  color: var(--color6);
+}
+
+.navbar .nav li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--color7);
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.navbar .nav li.cc a {
+  border: 5px solid var(--color8);
+  padding: 12px;
+  color: var(--color8);
+  font-weight: bolder;
 }
