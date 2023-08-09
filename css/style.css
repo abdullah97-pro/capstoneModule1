@@ -345,6 +345,28 @@ header {
   overflow: hidden;
 }
 
+.speaker_section .speaker_content .more {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #dcdcdc;
+  position: relative;
+  top: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.speaker_section .speaker_content .more::after {
+  content: url('../image/arrow_down\ 1.png');
+  width: 4px;
+  height: 5.33px;
+  margin-left: 10px;
+}
+
 .speaker_section .speaker_content .speakers .speaker_grp1 {
   width: 100%;
   height: 254.02px;
@@ -815,6 +837,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid var(--color17);
+  }
+
+  .speaker_section .speaker_content .more {
+    display: none;
   }
 
   /* partners */
